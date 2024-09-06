@@ -12,12 +12,13 @@ import streamlit as st
 
 def main():
     # Title
-    st.sidebar.title("ResumeFit")
+    st.sidebar.title("Batch ResumeMatch")
     st.sidebar.write("""Upload resumes to see how well they fit a job description.""")
 
     # Input fields
-    resume_files = st.sidebar.text_area("Resume Files", height=200)
-    jd_text = st.sidebar.text_area("Job Description", height=200)
+    jd_text = st.sidebar.text_input("Job Description", height=200)
+    resume_files = st.sidebar.file_uploader("Resume Files", height=200)
+
 
     # Submit button
     if st.sidebar.button("Submit"):

@@ -16,8 +16,8 @@ def main():
     st.sidebar.write("""Upload resumes to see how well they fit a job description.""")
 
     # Input fields
-    jd_text = st.sidebar.text_input("Job Description", height=200)
-    resume_files = st.sidebar.file_uploader("Resume Files", height=200)
+    jd_text = st.sidebar.text_input("Job Description")
+    resume_files = st.sidebar.file_uploader("Resume Files")
 
 
     # Submit button
